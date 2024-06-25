@@ -1,0 +1,139 @@
+/*==========================================================================*/
+/*                         M A I N   V I S U A L                            */
+/*==========================================================================*/
+
+.main-visual {
+    .inner {
+
+    }
+}
+
+h2 {
+    
+}
+
+.iMainvs {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    // height: 940px;
+    // overflow: hidden;
+    ul {
+        height: 100%;
+        li {
+            width: 100%;
+            height: 100%;
+        }
+        span {
+            display: block;
+            width: 1920px;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: calc(50% - 968px);
+                top: 0;
+            }
+            &.img1 {
+                &::before {
+                    background: url('../images/mainvs-1.jpg') center no-repeat;
+                    background-size: cover;
+                }
+            }
+            &.img2 {
+                &::before {
+                    background: url('../images/mainvs-2.jpg') center no-repeat;
+                    background-size: cover;
+                }
+            }
+            &.img3 {
+                &::before {
+                    background: url('../images/mainvs-3.jpg') center no-repeat;
+                    background-size: cover;
+                }
+            }
+            &.img4 {
+                &::before {
+                    background: url('../images/mainvs-4.jpg') center no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
+
+
+.l-kv__txt1 {
+    text-align: center;
+    z-index: 9;
+    padding-top: 68px;
+}
+.iMainvs__wrap--img1 {
+    height: calc(100vh + 20px);
+    position: relative;
+}
+.iMainvs__wrap--img1 .img1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 19;
+}
+.iMainvs__wrap--img1 .img1-wrap {
+    position: absolute;
+    width: 1920px;
+    max-width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: url('../images/mainvs-1.jpg') top -22px center no-repeat;
+    background-size: 100%;
+    -webkit-transition: 0.8s ease-out all;
+    transition: 0.8s ease-out all;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: calc(100vh + 25px);
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 49%, rgb(0, 0, 0) 100%);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        opacity: .87;
+    }
+}
+
+.iMainvs__wrap--img1 .wrap {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iMainvs__wrap--img1 .txt1 {
+    position: absolute;
+    z-index: 18;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iMainvs__wrap--img1 {
+    .outside {
+        position: relative;
+        left: -15px;
+        top: -28px;
+    }
+}

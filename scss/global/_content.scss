@@ -1,0 +1,127 @@
+/*==========================================================================*/
+/*                                M A I N                                   */
+/*==========================================================================*/
+
+main {
+    height: 1000vh;
+    margin-top: var(--i);
+    > * {
+        z-index: 2;
+    }
+}
+h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: $shippori;
+    letter-spacing: .05em;
+    line-height: 1.86em;
+    margin-bottom: 0;
+}
+.iMainvs__wrap {
+    .iMainvs__h2--logo {
+        position: relative;
+        text-align: center;
+        margin-bottom: 72px;
+        span {
+            display: block;
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+            text-align: center;
+            margin: 0 auto;
+            font-family: $hina;
+            font-size: 39px;
+            letter-spacing: .15em;
+            line-height: 1.5em;
+            text-align: start;
+            margin-top: 60px;
+        }
+    }
+    .outside {
+        position: relative;
+        left: 0;
+        top: -41px;
+    }
+}
+.iMainvs__h2 {
+    &.inside {
+        .iMainvs__h2--logo {
+            display: inline-block;
+            &::before {
+                content: "昭和創業";
+                position: absolute;
+                writing-mode: vertical-rl;
+                text-orientation: mixed;
+                right: -39px;
+                color: #fff;
+                font-size: 36px;
+                font-family: $shippori;
+                line-height: 1.5em;
+                font-weight: 600;
+                letter-spacing: .16em;
+                top: -14px;
+            }
+        }
+    }
+    &--logo {
+        position: relative;
+        span {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            display: block;
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+            text-align: center;
+            margin: 0 auto;
+            font-family: $hina;
+            font-size: 39px;
+            letter-spacing: .15em;
+            line-height: 1.5em;
+            text-align: start;
+            margin: 60px auto 0;  
+            width: max-content;
+            height: max-content;
+        }
+    }
+}
+
+.block2{
+    position: relative;
+    z-index: -1;
+    &__bg1 {
+        padding: 177px 0;
+        background: url('../images/block2-bg.jpg') center no-repeat;
+        background-size: cover;
+        height: 680px;
+    }
+    &__bg2 {
+        // background: url('../images/block2-bg2.jpg') center top no-repeat;
+        // background-size: cover;
+        // background-attachment: fixed;
+        overflow: hidden;
+        height: 556px;
+        position: relative;
+        z-index: -1;
+        &::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            background: url('../images/block2-bg2.jpg') center top no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+    
+}
+
+.p-top__lead {
+    .l-kv__txt1 {
+        padding-top: 0;
+    }
+}
+

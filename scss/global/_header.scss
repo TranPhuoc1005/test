@@ -1,0 +1,138 @@
+/*==========================================================================*/
+/*                              H E A D E R                                 */
+/*==========================================================================*/
+
+header {
+    
+}
+
+h1 {
+    
+}
+.iLogo {
+    position: fixed;
+    z-index: 10;
+    top: 35px;
+    left: 41px;
+}
+.iMenu {
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    z-index: 10;
+    right: 150px;
+    top: 41px;
+    > li {
+        &:not(:last-child) {
+            margin-left: 29px;
+        }
+    }
+    .toggle {
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        font-size: 19px;
+        font-weight: bold;
+        letter-spacing: .16em;
+        color: #fff;
+    }
+}
+.iSubmenu {
+    display: none;
+}
+
+.iContact__fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 85px;
+    a {
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    &--line {
+        background-color: $linecl;
+        height: 254px;
+        font-family: $shippori;
+        font-size: 21px;
+        font-weight: 600;
+        letter-spacing: .15em;
+        color: #fff;
+        span {
+            position: relative;
+            z-index: 1;
+            padding-top: 49px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 39px;
+                height: 37px;
+                background: url('../images/ic-line.svg') top center no-repeat;
+                background-size: cover;
+                left: -5px;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+    &--phone {
+        background-color: #fff;
+        padding-right: 5px;
+        padding: 34px 5px 26px 0;
+        > span {
+            display: inline-flex;
+            flex-direction: column;
+            padding-top: 37px;
+            position: relative;
+            z-index: 1;
+            &::before {
+                content: '';
+                position: absolute;
+                background: url('../images/ic-phone.svg') center no-repeat;
+                width: 26px;
+                height: 26px;
+                background-size: cover;
+                top: 0;
+                left: 5px;
+                right: 0;
+                margin: auto;
+                z-index: -1;
+            }
+        }
+        .num {
+            display: flex;
+            font-family: $shippori;
+            font-size: 22px;
+            font-weight: 600;
+            color: #171717;
+            letter-spacing: -.012em;
+            span {
+                position: relative;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px 0 6px;
+                left: 2px;
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 1px;
+                    height: 6px;
+                    background-color: #000;
+                }
+            }
+        }
+        .txt {
+            font-weight: bold;
+            color: #8D8D8D;
+            font-size: 16px;
+            line-height: 1em;
+            letter-spacing: .15em;
+        }
+    }
+}
